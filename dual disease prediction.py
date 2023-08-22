@@ -6,7 +6,7 @@ from PIL import Image
 
 
 
-image_directory = "C:/Users/Lenovo/Desktop/Multiple Disease Prediction System/images/icons8.png"
+image_directory = "C:/Users/Lenovo/Desktop/Dual Disease Prediction System/images/icons8.png"
 image = Image.open(image_directory)
 PAGE_CONFIG = {"page_title":"Dual Disease Prediction Web App", "page_icon":image, "layout":"centered", "initial_sidebar_state":"auto"}
 st.set_page_config(**PAGE_CONFIG)
@@ -16,11 +16,11 @@ st.set_page_config(**PAGE_CONFIG)
 
 # Loading the Saved Models
 
-diabetes_model = pickle.load(open('C:/Users/Lenovo/Desktop/Multiple Disease Prediction System/saved models/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('C:/Users/Lenovo/Desktop/Dual Disease Prediction System/saved models/diabetes_model.sav', 'rb'))
 
-#heart_disease_model = pickle.load(open('C:/Users/Lenovo/Desktop/Multiple Disease Prediction System/saved models/heartdisease_model.sav', 'rb'))
+#heart_disease_model = pickle.load(open('C:/Users/Lenovo/Desktop/Dual Disease Prediction System/saved models/heartdisease_model.sav', 'rb'))
 
-parkinson_model = pickle.load(open('C:/Users/Lenovo/Desktop/Multiple Disease Prediction System/saved models/parkinson_model.sav', 'rb'))
+parkinson_model = pickle.load(open('C:/Users/Lenovo/Desktop/Dual Disease Prediction System/saved models/parkinson_model.sav', 'rb'))
 
 
 
